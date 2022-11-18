@@ -9,7 +9,7 @@
     </p>
     <div class="buttons">
       <button class="button">Back this project</button>
-      <div class="bookmarkBtn">
+      <div class="bookmarkBtn active">
         <div class="icon_wrapper">
           <BookmarkIcon />
         </div>

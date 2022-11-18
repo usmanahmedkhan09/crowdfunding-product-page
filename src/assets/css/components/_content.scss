@@ -53,7 +53,18 @@
                 align-items: center;
                 justify-content: center;
 
-
+                &.active{
+                    // background-color: $dark-cyan;
+                    .icon_wrapper{
+                        background-color: $dark-cyan;
+                        svg{
+                            fill: white;
+                        }
+                    }
+                    span {
+                        color: $dark-cyan;
+                    }
+                }
                 .icon_wrapper{
                     height: 50px;
                     width: 50px;
