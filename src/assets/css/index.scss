@@ -1,4 +1,5 @@
-@use './util/index.scss';
+@use './util' as *;
+@use './components' as *;
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
 
 *,
@@ -19,6 +20,22 @@ body {
   height: 100%;
   font-size: 1.6rem;
   font-family: 'Commissioner', sans-serif;
+  cursor: pointer;
 }
 
-  
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+:root{
+  ul {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    padding: unset;
+    li{
+      padding: 0px 16px;
+    }
+  }
+}
