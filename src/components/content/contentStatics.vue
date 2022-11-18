@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="input_range">
-      <input type="range" name="price" id="price" min="0" max="100" />
+      <progress id="file" value="32" max="100"></progress>
     </div>
   </div>
 </template>

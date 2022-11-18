@@ -114,9 +114,10 @@
 
         .input_range {
             margin-top: 32px;
-            input {
+            progress {
+                height: 30px;
                 width: 100%;
-              
+                accent-color: $dark-cyan;
             }
         }
     }
