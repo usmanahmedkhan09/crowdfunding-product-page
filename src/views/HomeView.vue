@@ -1,12 +1,14 @@
 <template>
   <HeaderVue />
+  <Content />
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import HeaderVue from "@/components/header.vue";
+import Content from "@/components/content/index.vue";
 
 export default defineComponent({
-  components: { HeaderVue },
+  components: { HeaderVue, Content },
   setup() {
     return {
       HeaderVue,
