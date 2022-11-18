@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 .content {
     display: flex;
     justify-content: center;
@@ -18,7 +20,22 @@
         height: 300px;
         margin-top: -64px;
         z-index: 999999;
-       
+        text-align: center;
+        .header_logo {
+            text-align: center;
+            margin-top: -32px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+            margin-top: 16px;
+        }
+
+        .subtitle{
+            color: $dark-gray;
+            margin: 16px 0px;
+        }
     }
 }
 
