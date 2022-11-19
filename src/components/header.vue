@@ -10,13 +10,15 @@
         <li>Get Started</li>
       </ul>
     </nav>
+    <Menu class="menuIcon" />
   </header>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
 import Logo from "@/components/icons/logo.vue";
+import Menu from "@/components/icons/hamburger.vue";
 export default defineComponent({
-  components: { Logo },
+  components: { Logo, Menu },
   setup() {
     return {};
   },
