@@ -1,5 +1,5 @@
 <template>
-  <div class="bambooCard card">
+  <div class="bambooCard">
     <div class="bambooCard--header">
       <p class="title">{{ bambooStand.title }}</p>
       <p class="price">{{ bambooStand.priceTitle }}</p>
