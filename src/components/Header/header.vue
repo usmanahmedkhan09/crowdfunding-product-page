@@ -10,17 +10,21 @@
         <li>Get Started</li>
       </ul>
     </nav>
-    <Menu class="menuIcon" />
+    <Menu @click="showMoal = true" class="menuIcon" />
+    <vue-modal :show="showMoal"></vue-modal>
   </header>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import Logo from "@/components/icons/logo.vue";
 import Menu from "@/components/icons/hamburger.vue";
+import SidebarVue from "./sidebar.vue";
+
 export default defineComponent({
-  components: { Logo, Menu },
+  components: { Logo, Menu, SidebarVue },
   setup() {
-    return {};
+    const showMoal = ref(false);
+    return { showMoal };
   },
 });
 </script>

@@ -1,12 +1,12 @@
 <template>
-  <widget-container-modal />
-  <router-view></router-view>
+  <div class="sidebar">
+    <div class="card">usmna ahmed</div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-import { container } from "jenesius-vue-modal";
+
 export default defineComponent({
-  components: { WidgetContainerModal: container },
   setup() {
     return {};
   },

@@ -6,6 +6,12 @@
     display: flex;
     justify-content: space-between;
     padding: 32px 120px;
+    position: relative;
+
+    .menuIcon{
+        display: none;
+    }
+
 }
 
 
@@ -16,6 +22,7 @@
             }
 
             .menuIcon{
+                display: block;
                 margin-top: 8px;
             }
         }
