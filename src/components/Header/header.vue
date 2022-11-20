@@ -11,7 +11,11 @@
       </ul>
     </nav>
     <Menu @click="showMoal = true" class="menuIcon" />
-    <vue-modal :show="showMoal"></vue-modal>
+    <vue-modal :show="showMoal">
+      <template>
+        <SidebarVue />
+      </template>
+    </vue-modal>
   </header>
 </template>
 <script lang="ts">
