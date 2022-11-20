@@ -1,13 +1,7 @@
 <template>
   <div class="modal_container" :class="show ? 'open' : 'close'" v-if="show">
-    <div>
-      <slot name="header"></slot>
-    </div>
-    <div>
+    <div class="modal--body">
       <slot></slot>
-    </div>
-    <div>
-      <slot name="footer"></slot>
     </div>
   </div>
 </template>

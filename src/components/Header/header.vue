@@ -12,9 +12,7 @@
     </nav>
     <Menu @click="showMoal = true" class="menuIcon" />
     <vue-modal :show="showMoal">
-      <template>
-        <SidebarVue />
-      </template>
+      <SidebarVue @toggleSidebar="showMoal = false" />
     </vue-modal>
   </header>
 </template>
@@ -23,12 +21,18 @@ import { defineComponent, ref } from "vue";
 import Logo from "@/components/icons/logo.vue";
 import Menu from "@/components/icons/hamburger.vue";
 import SidebarVue from "./sidebar.vue";
+import IconCloseVue from "../icons/IconClose.vue";
+// import { openModal } from "jenesius-vue-modal";
 
 export default defineComponent({
-  components: { Logo, Menu, SidebarVue },
+  components: { Logo, Menu, SidebarVue, IconCloseVue },
   setup() {
     const showMoal = ref(false);
-    return { showMoal };
+
+    const open = async () => {
+      // let modal = await openModal(SidebarVue);
+    };
+    return { showMoal, open };
   },
 });
 </script>

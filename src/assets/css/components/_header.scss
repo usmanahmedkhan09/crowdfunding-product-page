@@ -1,3 +1,5 @@
+@use '../util' as *;
+
 .header {
     min-height: 400px;
     background-image: url('../../assets/images/image-hero-desktop.jpg');
@@ -12,16 +14,56 @@
         display: none;
     }
 
+    .sidebar {
+        width: 90%;
+        margin: auto;
+        margin: 32px 24px;
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 24px;
+        }
+
+        .icon_wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .close_icon{
+                fill: white;
+                align-self: flex-end;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            color: black;
+            padding: 10px 24px;
+
+            li {
+                padding: 16px 0px;
+                font-size: 1.8rem;
+                font-weight: 700;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $dark-gray;
+                }
+            }
+        }
+    }
+
 }
 
 
 @media screen and (max-width: 768px) {
         .header {
+            padding: 32px 24px;
+
             nav {
                 display: none;
             }
 
-            .menuIcon{
+            .menuIcon{  
                 display: block;
                 margin-top: 8px;
             }
