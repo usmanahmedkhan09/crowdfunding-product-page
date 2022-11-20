@@ -10,7 +10,7 @@
         <li>Get Started</li>
       </ul>
     </nav>
-    <Menu @click="showMoal = true" class="menuIcon" />
+    <Menu v-if="!showMoal" @click="showMoal = true" class="menuIcon" />
     <vue-modal :show="showMoal">
       <SidebarVue @toggleSidebar="showMoal = false" />
     </vue-modal>

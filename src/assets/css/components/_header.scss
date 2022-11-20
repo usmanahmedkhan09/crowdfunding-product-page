@@ -12,6 +12,14 @@
 
     .menuIcon{
         display: none;
+
+        &.show {
+            display: block;
+        }
+
+        &.hide {
+            display: none;
+        }
     }
 
     .sidebar {
