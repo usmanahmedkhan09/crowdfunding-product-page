@@ -22,17 +22,13 @@ import Logo from "@/components/icons/logo.vue";
 import Menu from "@/components/icons/hamburger.vue";
 import SidebarVue from "./sidebar.vue";
 import IconCloseVue from "../icons/IconClose.vue";
-// import { openModal } from "jenesius-vue-modal";
 
 export default defineComponent({
   components: { Logo, Menu, SidebarVue, IconCloseVue },
   setup() {
     const showMoal = ref(false);
 
-    const open = async () => {
-      // let modal = await openModal(SidebarVue);
-    };
-    return { showMoal, open };
+    return { showMoal };
   },
 });
 </script>
