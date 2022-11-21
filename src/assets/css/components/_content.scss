@@ -232,51 +232,61 @@
 
             .pledgeCard--content{
                 padding: 24px;
+                display: flex;
+                gap: 24px;
+                .radio_wrapper{
+                    max-width: 30px;
+                    .radioBtn {
+                        accent-color: $dark-cyan;
+                        height: 20px;
+                        width: 20px;
+                    }
 
-                &--header{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: flex-end;
+                }
 
-                    .wrapper{
+                .description_wrapper{
+                    width: 100%;
+
+                    .description_header{
                         display: flex;
-                        align-items: center;
-                        gap: 16px;
-    
-                        .radioBtn {
-                            accent-color: $dark-cyan;
-                            height: 20px;
-                            width: 20px;
-                            position: absolute;
-                        }
-    
-                        .p_title{
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                        }
-    
-                        .p_price{
-                            color : $dark-cyan;
-                            font-size: 1.6rem;
-                            font-weight: 700;
-                        }
-                    }
-    
-                    h1 {
-                        font-size: 1.6rem;
-                        font-weight: 700;
-                    }
-                }
-                &--body{
-                    margin-top: 16px;
-                }
+                        justify-content: space-between;
+                        width: 100%;
 
+                        .wrapper{
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+        
+                           
+                            .p_title{
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                            }
+        
+                            .p_price{
+                                color : $dark-cyan;
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                            }
+                        }
+        
+                        h1 {
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .description_body{
+                        p{
+                            margin-top: 16px;
+                            color: $dark-gray;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
                 
             }
 
-            // .pledgeCard--content{
-            //     padding: 24px;
-            // }
         }
     }
 }

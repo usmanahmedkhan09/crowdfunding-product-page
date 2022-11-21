@@ -12,24 +12,34 @@
     </div>
     <div class="pledgeCard">
       <div class="pledgeCard--content">
-        <div class="pledgeCard--content--header">
-          <div class="wrapper">
-            <input type="radio" class="radioBtn" />
-            <p class="p_title">Pledge with no reward</p>
-            <p class="p_price">Pledge $25 or more</p>
+        <div class="radio_wrapper">
+          <input type="radio" class="radioBtn" />
+        </div>
+        <div class="description_wrapper">
+          <div class="description_header">
+            <div class="wrapper">
+              <p class="p_title">Pledge with no reward</p>
+              <p class="p_price">Pledge $25 or more</p>
+            </div>
+            <h1>
+              100
+              <sup>left</sup>
+            </h1>
           </div>
-          <h1>
-            100
-            <sup>left</sup>
-          </h1>
+          <div class="description_body">
+            <p>
+              You get an ergonomic stand made of natural bamboo.You've helped us
+              launch our promotional campaign, and you'll be added to a special
+              Backer member list
+            </p>
+          </div>
         </div>
-        <div class="pledgeCard--content--body">
-          <p>
-            You get an ergonomic stand made of natural bamboo.You've helped us
-            launch our promotional campaign, and you'll be added to a special
-            Backer member list
-          </p>
-        </div>
+        <!-- <div class="pledgeCard--content--header">
+          
+        </div> -->
+        <!-- <div class="pledgeCard--content--body">
+         
+        </div> -->
       </div>
       <!-- <div class="pledgeCard--content">
         <p>
