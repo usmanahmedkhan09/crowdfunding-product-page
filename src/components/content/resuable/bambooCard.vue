@@ -1,22 +1,13 @@
 <template>
   <div class="bambooCard">
     <div class="bambooCard--header">
-      <p v-if="!pledge" class="title">{{ bambooStand.title }}</p>
-      <p v-if="!pledge" class="price">{{ bambooStand.priceTitle }}</p>
-      <input v-if="pledge" type="radio" class="radioBtn" />
-      <div v-if="pledge" class="title_wrapper">
-        <p class="title">{{ bambooStand.title }}</p>
-        <p class="price">{{ bambooStand.priceTitle }}</p>
-      </div>
-      <h1 v-if="pledge">
-        {{ bambooStand.left }}
-        <sup>left</sup>
-      </h1>
+      <p class="title">{{ bambooStand.title }}</p>
+      <p class="price">{{ bambooStand.priceTitle }}</p>
     </div>
     <div class="bambooCard--body">
       <p>{{ bambooStand.description }}</p>
     </div>
-    <div class="bambooCard--footer" v-if="!pledge">
+    <div class="bambooCard--footer">
       <h1>
         {{ bambooStand.left }}
         <sup>left</sup>

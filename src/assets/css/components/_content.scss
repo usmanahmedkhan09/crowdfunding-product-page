@@ -161,12 +161,6 @@
             justify-content: space-between;
             align-items: flex-end;
 
-            .title_wrapper{
-                display: flex;
-                align-items: flex-end;
-                gap: 16px;
-
-            }
 
             .title{
                 font-size: 1.8rem;
@@ -175,20 +169,6 @@
                 color : $dark-cyan;
                 font-size: 1.6rem;
                 font-weight: 500;
-            }
-
-            h1 {
-                font-size: 16px;
-                font-weight: 700;
-            }
-           
-
-            .radioBtn {
-                accent-color: $dark-cyan;
-                height: 20px;
-                width: 20px;
-                margin-left: -32px;
-                position: absolute;
             }
         }
 
@@ -215,13 +195,89 @@
         }
     }
 
-    .pledgeCard{
+    .pledge_container{
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
         padding: 24px;
-        // overflow-x: scroll;
+        min-height: 600px;
+        width: 40%;
+
+        &--header{
+            svg {
+                fill: black;
+                float: right;
+            }
+
+            .title_wrapper{
+                h1{
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    color: $dark-gray;
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        .pledgeCard{
+            width: 100%;
+            margin: 32px 0px;
+            box-shadow: 0px 0px 2px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);
+            border-radius: 10px;
+
+            .pledgeCard--content{
+                padding: 24px;
+
+                &--header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .wrapper{
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+    
+                        .radioBtn {
+                            accent-color: $dark-cyan;
+                            height: 20px;
+                            width: 20px;
+                            position: absolute;
+                        }
+    
+                        .p_title{
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                        }
+    
+                        .p_price{
+                            color : $dark-cyan;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                        }
+                    }
+    
+                    h1 {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                    }
+                }
+                &--body{
+                    margin-top: 16px;
+                }
+
+                
+            }
+
+            // .pledgeCard--content{
+            //     padding: 24px;
+            // }
+        }
     }
 }
 

@@ -1,19 +1,59 @@
 <template>
-  <div class="pledgeCard card">
-    <bambooCardVue
+  <div class="pledge_container card">
+    <div class="pledge_container--header">
+      <IconCloseVue />
+      <div class="title_wrapper">
+        <h1>Back this project</h1>
+        <p>
+          Want to support us in bringing MasterCraft Bamboo Mointer Riser out in
+          the world
+        </p>
+      </div>
+    </div>
+    <div class="pledgeCard">
+      <div class="pledgeCard--content">
+        <div class="pledgeCard--content--header">
+          <div class="wrapper">
+            <input type="radio" class="radioBtn" />
+            <p class="p_title">Pledge with no reward</p>
+            <p class="p_price">Pledge $25 or more</p>
+          </div>
+          <h1>
+            100
+            <sup>left</sup>
+          </h1>
+        </div>
+        <div class="pledgeCard--content--body">
+          <p>
+            You get an ergonomic stand made of natural bamboo.You've helped us
+            launch our promotional campaign, and you'll be added to a special
+            Backer member list
+          </p>
+        </div>
+      </div>
+      <!-- <div class="pledgeCard--content">
+        <p>
+          You get an ergonomic stand made of natural bamboo.You've helped us
+          launch our promotional campaign, and you'll be added to a special
+          Backer member list
+        </p>
+      </div> -->
+    </div>
+    <!-- <bambooCardVue
       v-for="(stand, index) in cardDetails"
       :key="index"
       :data="stand"
       :pledge="true"
-    />
+    /> -->
   </div>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import bambooCardVue from "./resuable/bambooCard.vue";
+import IconCloseVue from "../icons/IconClose.vue";
 
 export default defineComponent({
-  components: { bambooCardVue },
+  components: { bambooCardVue, IconCloseVue },
   setup() {
     const cardDetails = ref([
       {
