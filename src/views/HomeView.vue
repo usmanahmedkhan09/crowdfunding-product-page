@@ -1,6 +1,6 @@
 <template>
   <HeaderVue />
-  <!-- <Content /> -->
+  <Content />
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";

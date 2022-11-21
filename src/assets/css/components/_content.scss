@@ -186,3 +186,64 @@
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .content{
+        .contentHeader{
+            width: 90%;
+            padding: 0px 16px;
+
+            .buttons{
+                padding: 0px 16px;
+                width: 100%;
+                .bookmarkBtn{
+                    width: fit-content;
+                    min-width: unset;
+                    .icon_wrapper{
+                        position: unset;
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .contentStatics{
+            width: 90%;
+            padding: 0px 16px;
+        }
+
+        .contentAbout{
+            width: 90%;
+            padding: 16px 16px;
+
+            .bambooCard{
+                padding: 16px 16px;
+
+                &--header{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+
+                &--footer{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (max-width: 375px){
+//     .content{
+//         .contentStatics{
+//             .wrapper{
+//                 flex-direction: column;
+//                 align-items: center;
+//             }
+//         }
+//     }
+// }
