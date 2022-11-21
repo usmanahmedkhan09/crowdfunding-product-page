@@ -159,7 +159,14 @@
         &--header{
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
+
+            .title_wrapper{
+                display: flex;
+                align-items: flex-end;
+                gap: 16px;
+
+            }
 
             .title{
                 font-size: 1.8rem;
@@ -169,10 +176,25 @@
                 font-size: 1.6rem;
                 font-weight: 500;
             }
+
+            h1 {
+                font-size: 16px;
+                font-weight: 700;
+            }
+           
+
+            .radioBtn {
+                accent-color: $dark-cyan;
+                height: 20px;
+                width: 20px;
+                margin-left: -32px;
+                position: absolute;
+            }
         }
 
         &--body{
             margin: 16px 0px;
+            text-align: start;
             p{
                 color : $dark-gray;
                 line-height: 24px;

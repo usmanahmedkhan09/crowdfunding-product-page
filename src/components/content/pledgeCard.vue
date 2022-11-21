@@ -4,6 +4,7 @@
       v-for="(stand, index) in cardDetails"
       :key="index"
       :data="stand"
+      :pledge="true"
     />
   </div>
 </template>
