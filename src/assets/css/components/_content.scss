@@ -15,18 +15,25 @@
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
       border-radius: 10px;
-    //   margin: auto;
       margin-bottom: 32px;
     }
     
     .contentHeader{
         width: 50%;
-        height: 250px;
+        min-height: 250px;
         margin-top: -100px;
         text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         .header_logo {
-            text-align: center;
-            margin-top: -32px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -32px;
         }
 
         .title {
@@ -192,7 +199,7 @@
     .content{
         .contentHeader{
             width: 90%;
-            padding: 0px 16px;
+            // padding: 0px 16px;
 
             .buttons{
                 padding: 0px 16px;
