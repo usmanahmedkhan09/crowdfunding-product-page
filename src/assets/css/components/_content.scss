@@ -230,6 +230,10 @@
             box-shadow: 0px 0px 2px rgba(0,0,0,0.12), 0 0px 2px rgba(0,0,0,0.24);
             border-radius: 10px;
 
+            &.active {
+                border: 2px solid $dark-cyan;
+            }
+
             .pledgeCard--content{
                 padding: 24px;
                 display: flex;
@@ -261,6 +265,10 @@
                             .p_title{
                                 font-size: 1.6rem;
                                 font-weight: 700;
+
+                                &:hover{
+                                    color: $dark-cyan;
+                                }
                             }
         
                             .p_price{

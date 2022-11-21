@@ -27,7 +27,7 @@
 import { defineComponent, ref } from "vue";
 import MastercraftLogo from "../icons/logo-mastercraft.vue";
 import BookmarkIcon from "../icons/bookmark.vue";
-import PledgeCardVue from "./pledgeCard.vue";
+import PledgeCardVue from "./pledgeCardContainer.vue";
 
 export default defineComponent({
   components: { MastercraftLogo, BookmarkIcon, PledgeCardVue },
