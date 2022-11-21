@@ -8,7 +8,9 @@
       A beautiful & handcrafted moniter stand to reduce neck and eye strain
     </p>
     <div class="buttons">
-      <button class="button">Back this project</button>
+      <button class="button" @click="showModal = true">
+        Back this project
+      </button>
       <div class="bookmarkBtn active">
         <div class="icon_wrapper">
           <BookmarkIcon />
@@ -16,17 +18,24 @@
         <span>BookMark</span>
       </div>
     </div>
+    <vue-modal :show="showModal">
+      <PledgeCardVue />
+    </vue-modal>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import MastercraftLogo from "../icons/logo-mastercraft.vue";
 import BookmarkIcon from "../icons/bookmark.vue";
+import PledgeCardVue from "./pledgeCard.vue";
 
 export default defineComponent({
-  components: { MastercraftLogo, BookmarkIcon },
+  components: { MastercraftLogo, BookmarkIcon, PledgeCardVue },
   setup() {
-    return {};
+    const showModal = ref(false);
+    return {
+      showModal,
+    };
   },
 });
 </script>

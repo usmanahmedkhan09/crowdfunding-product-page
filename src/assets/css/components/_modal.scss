@@ -16,4 +16,11 @@
     &.close{
         display: none;
     }
+
+    .modal--body{
+        position: relative;
+        height: inherit;
+        width: inherit;
+        overflow: hidden;
+    }
 }
