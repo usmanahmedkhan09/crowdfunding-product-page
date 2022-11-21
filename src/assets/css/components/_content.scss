@@ -234,7 +234,7 @@
                 border: 2px solid $dark-cyan;
             }
 
-            .pledgeCard--content{
+            &--content{
                 padding: 24px;
                 display: flex;
                 gap: 24px;
@@ -294,6 +294,20 @@
                 }
                 
             }
+
+            &--footer{
+                border-top: 1px solid $dark-gray;
+                padding: 16px;
+
+                p {
+                    color: $dark-gray;
+                }
+
+                .amount_wrapper{
+
+                }
+            }
+
 
         }
     }

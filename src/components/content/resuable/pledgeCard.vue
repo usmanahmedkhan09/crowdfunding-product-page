@@ -27,6 +27,10 @@
         </div>
       </div>
     </div>
+    <div v-if="data.isActive" class="pledgeCard--footer">
+      <p>Enter your pledge</p>
+      <div class="amount_wrapper"></div>
+    </div>
   </div>
 </template>
 <script lang="ts">
