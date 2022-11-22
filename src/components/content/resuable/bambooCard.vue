@@ -14,6 +14,7 @@
       </h1>
       <button class="button">{{ bambooStand.btntext }}</button>
     </div>
+    <div class="disabled" v-if="bambooStand.left == 0"></div>
   </div>
 </template>
 <script lang="ts">
