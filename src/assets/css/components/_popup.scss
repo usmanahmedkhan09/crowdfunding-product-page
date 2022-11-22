@@ -1,0 +1,33 @@
+@use '../util/' as *;
+
+.success_popup{
+    width: 450px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px;
+
+    .content{
+        margin-top: 24px;
+        .message_title{
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        .message_des{
+            font-size: 1.4rem;
+            color: $dark-gray;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+
+        .button{
+            background-color: $moderate-cyan;
+            width: 110px;
+            min-width: unset;
+        }
+    }
+}

@@ -19,7 +19,8 @@
       </div>
     </div>
     <vue-modal :show="showModal">
-      <PledgeCardContainer @closeModal="showModal = false" />
+      <!-- <PledgeCardContainer @closeModal="showModal = false" /> -->
+      <SuccessPopupVue />
     </vue-modal>
   </div>
 </template>
@@ -28,9 +29,15 @@ import { defineComponent, ref } from "vue";
 import MastercraftLogo from "../icons/logo-mastercraft.vue";
 import BookmarkIcon from "../icons/bookmark.vue";
 import PledgeCardContainer from "./pledgeCardContainer.vue";
+import SuccessPopupVue from "../resuable/success-popup.vue";
 
 export default defineComponent({
-  components: { MastercraftLogo, BookmarkIcon, PledgeCardContainer },
+  components: {
+    MastercraftLogo,
+    BookmarkIcon,
+    PledgeCardContainer,
+    SuccessPopupVue,
+  },
   setup() {
     const showModal = ref(false);
 
