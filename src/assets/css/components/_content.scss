@@ -207,10 +207,12 @@
         &--header{
             svg {
                 fill: black;
-                float: right;
+                position: absolute;
+                right: 0;
             }
 
             .title_wrapper{
+                width: fit-content  ;
                 h1{
                     font-size: 1.8rem;
                     font-weight: bold;

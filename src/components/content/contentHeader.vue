@@ -19,7 +19,7 @@
       </div>
     </div>
     <vue-modal :show="showModal">
-      <PledgeCardVue />
+      <PledgeCardContainer @closeModal="showModal = false" />
     </vue-modal>
   </div>
 </template>
@@ -27,12 +27,13 @@
 import { defineComponent, ref } from "vue";
 import MastercraftLogo from "../icons/logo-mastercraft.vue";
 import BookmarkIcon from "../icons/bookmark.vue";
-import PledgeCardVue from "./pledgeCardContainer.vue";
+import PledgeCardContainer from "./pledgeCardContainer.vue";
 
 export default defineComponent({
-  components: { MastercraftLogo, BookmarkIcon, PledgeCardVue },
+  components: { MastercraftLogo, BookmarkIcon, PledgeCardContainer },
   setup() {
     const showModal = ref(false);
+
     return {
       showModal,
     };

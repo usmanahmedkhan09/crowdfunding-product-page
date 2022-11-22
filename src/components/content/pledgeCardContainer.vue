@@ -1,7 +1,7 @@
 <template>
   <div class="pledge_container card">
     <div class="pledge_container--header">
-      <IconCloseVue />
+      <IconCloseVue @click="$emit('closeModal')" />
       <div class="title_wrapper">
         <h1>Back this project</h1>
         <p>
@@ -80,6 +80,7 @@ export default defineComponent({
         return x;
       });
     };
+
     return {
       cardDetails,
       toggleStatus,
