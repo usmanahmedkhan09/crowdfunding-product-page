@@ -20,12 +20,11 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import bambooCardVue from "./resuable/bambooCard.vue";
 import IconCloseVue from "../icons/IconClose.vue";
 import PledgeCardVue from "./resuable/pledgeCard.vue";
 
 export default defineComponent({
-  components: { bambooCardVue, IconCloseVue, PledgeCardVue },
+  components: { IconCloseVue, PledgeCardVue },
   setup() {
     const cardDetails = ref([
       {

@@ -19,8 +19,8 @@
       </div>
     </div>
     <vue-modal :show="showModal">
-      <!-- <PledgeCardContainer @closeModal="showModal = false" /> -->
-      <SuccessPopupVue />
+      <PledgeCardContainer @closeModal="showModal = false" />
+      <!-- <SuccessPopupVue /> -->
     </vue-modal>
   </div>
 </template>

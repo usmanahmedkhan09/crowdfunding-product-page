@@ -12,13 +12,19 @@
         {{ bambooStand.left }}
         <sup>left</sup>
       </h1>
-      <button class="button">{{ bambooStand.btntext }}</button>
+      <button class="button" @click="showModal = true">
+        {{ bambooStand.btntext }}
+      </button>
     </div>
     <div class="disabled" v-if="bambooStand.left == 0"></div>
   </div>
+  <vue-modal :show="showModal">
+    <PledgeCardContainer @closeModal="showModal = false" />
+  </vue-modal>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+import PledgeCardContainer from "@/components/content/pledgeCardContainer.vue";
 
 export default defineComponent({
   props: {
@@ -30,10 +36,14 @@ export default defineComponent({
       default: false,
     },
   },
+  components: {
+    PledgeCardContainer,
+  },
   setup(props) {
     let bambooStand = ref(props.data);
+    const showModal = ref(false);
 
-    return { bambooStand };
+    return { bambooStand, showModal };
   },
 });
 </script>
