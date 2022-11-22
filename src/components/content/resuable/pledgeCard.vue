@@ -24,6 +24,10 @@
           <p>
             {{ data.description }}
           </p>
+          <h1 v-if="data.left != null">
+            {{ data.left }}
+            <sup>left</sup>
+          </h1>
         </div>
       </div>
     </div>
