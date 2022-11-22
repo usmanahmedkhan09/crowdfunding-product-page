@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div v-if="data.isActive" class="pledgeCard--footer">
+    <div v-if="data.isActive && data.price" class="pledgeCard--footer">
       <p>Enter your pledge</p>
       <div class="amount_wrapper">
         <div class="input_wrapper">
@@ -37,6 +37,7 @@
         <button class="button">Continue</button>
       </div>
     </div>
+    <div class="disabled" v-if="data.left == 0"></div>
   </div>
 </template>
 <script lang="ts">
