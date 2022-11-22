@@ -29,7 +29,13 @@
     </div>
     <div v-if="data.isActive" class="pledgeCard--footer">
       <p>Enter your pledge</p>
-      <div class="amount_wrapper"></div>
+      <div class="amount_wrapper">
+        <div class="input_wrapper">
+          <span>$</span>
+          <input type="number" />
+        </div>
+        <button class="button">Continue</button>
+      </div>
     </div>
   </div>
 </template>

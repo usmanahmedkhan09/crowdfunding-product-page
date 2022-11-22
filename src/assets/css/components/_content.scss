@@ -298,13 +298,46 @@
             &--footer{
                 border-top: 1px solid $dark-gray;
                 padding: 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
 
                 p {
                     color: $dark-gray;
                 }
 
                 .amount_wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
 
+                    .input_wrapper{
+                        padding: 14px;
+                        border: 1px solid $dark-cyan;
+                        min-width: 120px;
+                        min-height: 40px;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        span {
+                            color : $dark-gray;
+                            margin-right: 10px;
+
+                        }
+
+                        input{
+                            width: 50px;
+                            border: unset;
+                            outline: unset;
+                            padding: unset;
+                            font-weight: 700;
+                            caret-color: $dark-cyan;
+
+                        }
+                    }
+                    .button {
+                        min-width: 120px;
+                    }
                 }
             }
 
