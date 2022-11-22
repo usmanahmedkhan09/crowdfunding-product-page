@@ -11,11 +11,15 @@
       <button class="button" @click="showModal = true">
         Back this project
       </button>
-      <div class="bookmarkBtn active">
+      <div
+        @click="isActive = !isActive"
+        class="bookmarkBtn"
+        :class="{ active: isActive }"
+      >
         <div class="icon_wrapper">
           <BookmarkIcon />
         </div>
-        <span>BookMark</span>
+        <span>{{ isActive ? "BookMark" : "BookMarked" }}</span>
       </div>
     </div>
     <vue-modal :show="showModal">
@@ -40,9 +44,11 @@ export default defineComponent({
   },
   setup() {
     const showModal = ref(false);
+    const isActive = ref(true);
 
     return {
       showModal,
+      isActive,
     };
   },
 });
