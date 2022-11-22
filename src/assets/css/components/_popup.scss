@@ -9,6 +9,10 @@
     flex-direction: column;
     text-align: center;
     padding: 32px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
     .content{
         margin-top: 24px;
@@ -29,5 +33,11 @@
             width: 110px;
             min-width: unset;
         }
+    }
+}
+@media screen and (max-width: 768px) {
+    .success_popup{
+        width: 80%;
+        height: unset;
     }
 }
