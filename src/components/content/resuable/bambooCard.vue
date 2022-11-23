@@ -19,13 +19,16 @@
     <div class="disabled" v-if="bambooStand.left == 0"></div>
   </div>
   <vue-modal :show="showModal">
-    <PledgeCardContainer @closeModal="showModal = false" />
+    <PledgeCardContainer @closeModal="(val) => closeModal(val)" />
+  </vue-modal>
+  <vue-modal :show="openSuccessModal">
+    <successPopupVue @closeModal="openSuccessModal = false" />
   </vue-modal>
 </template>
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import PledgeCardContainer from "@/components/content/pledgeCardContainer.vue";
-
+import successPopupVue from "@/components/resuable/success-popup.vue";
 export default defineComponent({
   props: {
     data: {
@@ -38,12 +41,25 @@ export default defineComponent({
   },
   components: {
     PledgeCardContainer,
+    successPopupVue,
   },
   setup(props) {
     let bambooStand = ref(props.data);
     const showModal = ref(false);
+    const openSuccessModal = ref(false);
 
-    return { bambooStand, showModal };
+    const closeModal = (val: Boolean) => {
+      if (val) {
+        showModal.value = false;
+        setTimeout(() => {
+          openSuccessModal.value = true;
+        }, 500);
+      } else {
+        showModal.value = false;
+      }
+    };
+
+    return { bambooStand, showModal, openSuccessModal, closeModal };
   },
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="pledge_container card">
     <div class="pledge_container--header">
-      <IconCloseVue @click="$emit('closeModal')" />
+      <IconCloseVue @click="$emit('closeModal', false)" />
       <div class="title_wrapper">
         <h1>Back this project</h1>
         <p>
@@ -15,7 +15,7 @@
       :data="data"
       :key="index"
       @toggleStatus="(val) => toggleStatus(val)"
-      @closeModal="$emit('closeModal')"
+      @closeModal="$emit('closeModal', true)"
     />
   </div>
 </template>

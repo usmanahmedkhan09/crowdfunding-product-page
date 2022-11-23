@@ -8,7 +8,7 @@
         Monitor Riser Worldwide. You will get and eamil once our campagin is
         completed
       </p>
-      <button class="button">Got it!</button>
+      <button class="button" @click="$emit('closeModal')">Got it!</button>
     </div>
   </div>
 </template>
