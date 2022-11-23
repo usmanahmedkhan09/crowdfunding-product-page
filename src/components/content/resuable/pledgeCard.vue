@@ -36,25 +36,35 @@
       <div class="amount_wrapper">
         <div class="input_wrapper">
           <span>$</span>
-          <input type="number" />
+          <input v-model="amount" type="number" />
         </div>
-        <button class="button">Continue</button>
+        <button :disabled="amount == 0" class="button" @click="addamount(data)">
+          Continue
+        </button>
       </div>
     </div>
     <div class="disabled" v-if="data.left == 0"></div>
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
-
+import { defineComponent, ref } from "vue";
+import { useBambooStore } from "@/stores/counter";
 export default defineComponent({
   props: {
     data: {
       type: Object,
     },
   },
-  setup() {
-    return {};
+  setup(props, context) {
+    let amount = ref(0);
+    const { handlePledgeAddition } = useBambooStore();
+
+    const addamount = (data: any) => {
+      handlePledgeAddition(data, amount.value);
+      context.emit("closeModal");
+    };
+
+    return { handlePledgeAddition, amount, addamount };
   },
 });
 </script>

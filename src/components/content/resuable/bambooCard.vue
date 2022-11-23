@@ -1,5 +1,5 @@
 <template>
-  <div class="bambooCard">
+  <div class="bambooCard" v-if="bambooStand.left != null">
     <div class="bambooCard--header">
       <p class="title">{{ bambooStand.title }}</p>
       <p class="price">{{ bambooStand.priceTitle }}</p>
