@@ -224,6 +224,8 @@
                 fill: black;
                 position: absolute;
                 right: 0;
+                top: -10px;
+                z-index: 99999;
             }
 
             .title_wrapper{
@@ -429,7 +431,7 @@
 
         .pledge_container{
             width: 80%;
-
+            padding: 24px 14px;
             .pledgeCard{
                 &--content {
                     .description_header{

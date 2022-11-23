@@ -48,8 +48,12 @@ body {
     outline: unset;
     padding: 16px;
     color : white;
-    background-color: $dark-cyan;
+    background-color: $moderate-cyan;
     font-weight: 700;
+
+    &:hover{
+      background-color: $dark-cyan;
+    }
     
   }
 
