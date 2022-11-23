@@ -33,6 +33,7 @@ export default defineComponent({
   props: {
     data: {
       type: Object,
+      required: true,
     },
     pledge: {
       type: Boolean,

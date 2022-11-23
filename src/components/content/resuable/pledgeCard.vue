@@ -53,6 +53,7 @@ export default defineComponent({
   props: {
     data: {
       type: Object,
+      required: true,
     },
   },
   setup(props, context) {
