@@ -23,8 +23,10 @@
       </div>
     </div>
     <vue-modal :show="showModal">
-      <PledgeCardContainer @closeModal="showModal = false" />
-      <!-- <SuccessPopupVue /> -->
+      <PledgeCardContainer @closeModal="(val) => closeModal(val)" />
+    </vue-modal>
+    <vue-modal :show="openSuccessModal">
+      <successPopupVue @closeModal="openSuccessModal = false" />
     </vue-modal>
   </div>
 </template>
@@ -43,12 +45,26 @@ export default defineComponent({
     SuccessPopupVue,
   },
   setup() {
-    const showModal = ref(false);
     const isActive = ref(true);
+    const showModal = ref(false);
+    const openSuccessModal = ref(false);
+
+    const closeModal = (val: Boolean) => {
+      if (val) {
+        showModal.value = false;
+        setTimeout(() => {
+          openSuccessModal.value = true;
+        }, 500);
+      } else {
+        showModal.value = false;
+      }
+    };
 
     return {
       showModal,
       isActive,
+      openSuccessModal,
+      closeModal,
     };
   },
 });
