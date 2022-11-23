@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="input_range">
-      <progress id="file" value="89914" min="0" max="100000"></progress>
+      <progress id="file" value="89914" :max="100000"></progress>
     </div>
   </div>
 </template>
