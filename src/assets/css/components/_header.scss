@@ -77,3 +77,9 @@
             }
         }
 }
+
+@media screen and (min-width: 1440px) {
+    .header {
+        min-height: 500px;
+    }
+}
