@@ -17,7 +17,7 @@
           </div>
           <h1 v-if="data.left != null">
             {{ data.left }}
-            <sup>left</sup>
+            <span>left</span>
           </h1>
         </div>
         <div class="description_body">
@@ -26,7 +26,7 @@
           </p>
           <h1 v-if="data.left != null">
             {{ data.left }}
-            <sup>left</sup>
+            <span>left</span>
           </h1>
         </div>
       </div>

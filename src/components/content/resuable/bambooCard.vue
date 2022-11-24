@@ -10,7 +10,7 @@
     <div class="bambooCard--footer">
       <h1>
         {{ bambooStand.left }}
-        <sup>left</sup>
+        <span>left</span>
       </h1>
       <button class="button" @click="showModal = true">
         {{ bambooStand.btntext }}

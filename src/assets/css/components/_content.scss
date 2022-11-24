@@ -197,9 +197,12 @@
             align-items: center;
             h1{
                 font-weight: 700;
-                sup {
+                display: flex;
+                align-items: center;
+                span {
                     font-size: 1.6rem; 
                     color : $dark-gray;
+                    margin-left: 5px;
                 }
             }
         }
@@ -312,6 +315,10 @@
                         h1 {
                             font-size: 1.6rem;
                             font-weight: 700;
+                            span {
+                                font-size: 1.4rem;
+                                color: $dark-gray;
+                            }
                         }
                     }
 
@@ -324,6 +331,12 @@
 
                         h1{
                             display: none;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            span {
+                                font-size: 1.4rem;
+                                color: $dark-gray;
+                            }
                         }
                     }
                 }
